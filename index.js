@@ -265,7 +265,8 @@ console.log("Завдання 11 ====================================");
 console.log("factorial(5)", factorial(5)); // Виведе: 120
 console.log("factorial(10)", factorial(10)); // Виведе: 3628800
 
-// Задача 12: створити функцію `makeAdder`, яка приймає число `x` і повертає нову функцію, що приймає число `y` і повертає суму `x` та `y`.
+// Задача 12: створити функцію `makeAdder`, яка приймає число `x` і повертає нову функцію,
+// що приймає число `y` і повертає суму `x` та`y`.
 
 function makeAdder(x) {
   // Вертаємо нову функцію, яка приймає `y`
@@ -284,8 +285,8 @@ const getAdder = makeAdder(5);
 
 console.log("Завдання 12 ====================================");
 // Розкоментуйте після виконаня завдання
-// console.log("getAdder(10)", getAdder(10)); // Виведе: 15
-// console.log("makeAdder(5)(10)", makeAdder(5)(10)); // Виведе: 15
+console.log("getAdder(10)", getAdder(10)); // Виведе: 15
+console.log("makeAdder(5)(10)", makeAdder(5)(10)); // Виведе: 15
 
 // Задача 13: Задача: створити стрілкову функцію, яка приймає два числа і повертає їх добуток.
 let multiply = (x, y) => {
@@ -296,7 +297,8 @@ let multiply = (x, y) => {
 console.log("Завдання 13 ====================================");
 console.log("multiply(5, 3)", multiply(5, 3)); // Виведе: 15
 
-// Задача 14: Задача: створити каріровану функцію `divide`, яка може бути викликана як `divide(x)(y)`, щоб отримати результат ділення `x` на `y`.
+// Задача 14: Задача: створити каріровану функцію `divide`, яка може бути викликана як `divide(x)(y)`,
+// щоб отримати результат ділення `x` на`y`.
 
 function divide(x) {
   // Повертаємо нову функцію, яка приймає `y`
@@ -311,8 +313,8 @@ const getDivider = divide(2);
 
 console.log("Завдання 14 ====================================");
 // Розкоментуйте після виконаня завдання
-// console.log("getDivider(10)", getDivider(10)); // Виведе: 0.2
-// console.log("divide(2)(10)", divide(2)(10)); // Виведе: 0.2
+console.log("getDivider(10)", getDivider(10)); // Виведе: 0.2
+console.log("divide(2)(10)", divide(2)(10)); // Виведе: 0.2
 
 // Задача 15: Створити мемоізовану версію функції, яка обчислює площу квадрата на основі довжини його сторони.
 
@@ -346,10 +348,10 @@ const squareArea = memoizedArea();
 
 console.log("Завдання 15 ====================================");
 // Розкоментуйте після виконаня завдання
-// console.log("squareArea(5)", squareArea(5)); // Обчислює і виводить 25
-// console.log("squareArea(5)", squareArea(5)); // Виводить "Fetching from cache" і виводить 25 з кешу
-// console.log("squareArea(6)", squareArea(6)); // Обчислює і виводить 36
-// console.log("squareArea(6)", squareArea(6)); // Виводить "Fetching from cache" і виводить 36 з кешу
+console.log("squareArea(5)", squareArea(5)); // Обчислює і виводить 25
+console.log("squareArea(5)", squareArea(5)); // Виводить "Fetching from cache" і виводить 25 з кешу
+console.log("squareArea(6)", squareArea(6)); // Обчислює і виводить 36
+console.log("squareArea(6)", squareArea(6)); // Виводить "Fetching from cache" і виводить 36 з кешу
 
 // Задача 16: Задача: створити функціональний вираз для обчислення кубу числа.
 let cube = function (n) {
@@ -384,4 +386,4 @@ const createCompose = compose(increment, double);
 
 console.log("Завдання 17 ====================================");
 // Розкоментуйте після виконаня завдання
-// console.log("createCompose(5)", createCompose(5)); // Виведе: 12 (5+1=6, 6*2=12)
+console.log("createCompose(5)", createCompose(5)); // Виведе: 12 (5+1=6, 6*2=12)
