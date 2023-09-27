@@ -4,6 +4,11 @@
 
 function isEvenNumber(num) {
   // Перевірити, чи число num є парним
+  if (num % 2 === 0) {
+    return true;
+  } else {
+    return false;
+  }
   // Повернути результат перевірки (true або false) як результат функції
 }
 
